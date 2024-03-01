@@ -620,16 +620,16 @@ INDEX:
 
 15) HOW TO INSERT THE NGSRELATE TAG WITH THE FREQUENCY INFORMATION IN A VCF FILE:
 
-   To insert the ngsRelate tag with the frequency information you can use the command add_AF_tag,
-   you need to pass the input VCF file and the frequency file (one frequency value per line and no
-   other information). The assumption is that the first line contains the frequency value for the
-   first SNP in the VCF file (and so on).
+    To insert the ngsRelate tag with the frequency information you can use the command add_AF_tag,
+    you need to pass the input VCF file and the frequency file (one frequency value per line and no
+    other information). The assumption is that the first line contains the frequency value for the
+    first SNP in the VCF file (and so on).
 
-   • Documentation:
-     $ python3 $ADNA_PATH/add_AF_tag.py --help
+    • Documentation:
+      $ python3 $ADNA_PATH/add_AF_tag.py --help
 
-   • Example:
-     $ python3 $ADNA_PATH/add_AF_tag.py --vcf_file ancient.vcf --af_file ancient_frequency.frq
+    • Example:
+      $ python3 $ADNA_PATH/add_AF_tag.py --vcf_file ancient.vcf --af_file ancient_frequency.frq
 
 ============================================================
 
