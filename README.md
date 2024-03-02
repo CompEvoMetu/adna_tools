@@ -30,9 +30,9 @@ INDEX:
 
    Define the path for aDNA Tools and for the in-house scripts (use your specific folders):
 
-   ADNA_PATH="/path/to/python/packages/adna_tools/"; export ADNA_PATH                                                                  
-   IN_HOUSE_PYTHON_PATH="/path/to/python/packages/"; export IN_HOUSE_PYTHON_PATH                                                                          
-   PEDSIM_PATH="/path/to/PedSim"; export PEDSIM_PATH
+   $ ADNA_PATH="/path/to/python/packages/adna_tools/"; export ADNA_PATH                                                                  
+   $ IN_HOUSE_PYTHON_PATH="/path/to/python/packages/"; export IN_HOUSE_PYTHON_PATH                                                                          
+   $ PEDSIM_PATH="/path/to/PedSim"; export PEDSIM_PATH
 
    These lines can be added to the .profile (or .bashrc) file so that at every log-in the variables are automatically created (e.g., cd ~; nano .profile).
    Note that you will have to install your own version of PedSim and specify its path to the PEDSIM_PATH variable (see last paragraph in 2).
