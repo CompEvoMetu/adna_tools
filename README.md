@@ -30,7 +30,7 @@ INDEX:
 
    Define the path for aDNA Tools and for the in-house scripts (use your specific folders):
 
-   ADNA_PATH="/path/to/python/packages/adna_tools/"; export ADNA_PATH
+   ADNA_PATH="/path/to/python/packages/adna_tools/"; export ADNA_PATH                                                                  
    IN_HOUSE_PYTHON_PATH="/path/to/python/packages/"; export IN_HOUSE_PYTHON_PATH                                                                          
    PEDSIM_PATH="/path/to/PedSim"; export PEDSIM_PATH
 
