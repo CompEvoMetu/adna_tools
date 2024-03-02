@@ -6,7 +6,6 @@ INDEX:
 
  1) How to set the paths for Python scripts, aDNA Tools, and ped-sim
  2) How to install the aDNA Tools Python wheel package and ped-sim
-
  3) How to filter or interpolate VCF files given a genetic map
  4) How to generate random individuals
  5) How to select specific samples from the 1000G dataset
@@ -31,19 +30,20 @@ INDEX:
 
    Define the path for aDNA Tools and for the in-house scripts (use your specific folders):
 
-   $ ADNA_PATH="/mnt/NAS/projects/YOUR_FOLDER/python/packages/adna_tools/"; export ADNA_PATH
-   $ IN_HOUSE_PYTHON_PATH="/mnt/NAS/projects/YOUR_FOLDER/python/packages/"; export IN_HOUSE_PYTHON_PATH
-   $ PEDSIM_PATH="/home/YOUR_FOLDER/ped-sim"; export PEDSIM_PATH
+   ADNA_PATH="/path/to/python/packages/adna_tools/"; export ADNA_PATH
+   IN_HOUSE_PYTHON_PATH="/path/to/python/packages/"; export IN_HOUSE_PYTHON_PATH
+   PEDSIM_PATH="/path/to/PedSim"; export PEDSIM_PATH
 
    These lines can be added to the .profile (or .bashrc) file so that at every log-in the variables are automatically created (e.g., cd ~; nano .profile).
-   Note that you will have to install your own version of Ped-Sim and specify its path to the PEDSIM_PATH variable (see last paragraph in 2).
+   Note that you will have to install your own version of PedSim and specify its path to the PEDSIM_PATH variable (see last paragraph in 2).
 
 ============================================================
 
-2) HOW TO INSTALL THE ADNA TOOLS PYTHON WHEEL PACKAGE AND PED-SIM:
+2) HOW TO INSTALL THE ADNA TOOLS PYTHON WHEEL PACKAGE AND PEDSIM:
 
    ADNA TOOLS
-   Location of aDNA Tools package: /mnt/NAS/projects/2019_igor/python/packages/adnaTools-2021.3.22-py3-none-any.whl
+   
+   Location of aDNA Tools package: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
    You can copy the package to the IN_HOUSE_PYTHON_PATH folder you defined earlier and run the pip command from there.
 
    $ pip3 install --target=$IN_HOUSE_PYTHON_PATH adnaTools-2021.3.22-py3-none-any.whl --upgrade
