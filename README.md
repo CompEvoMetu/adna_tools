@@ -46,7 +46,7 @@ INDEX:
 
    $ git clone https://github.com/CompEvoMetu/adna_tools.git
    
-   After cloning the repository location of aDNA Tools package should be: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
+   After cloning the repository, location of aDNA Tools package should be: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
    
    $ pip3 install --target=$IN_HOUSE_PYTHON_PATH adnaTools-2022.5.14-py3-none-any.whl --upgrade
 
@@ -173,8 +173,8 @@ INDEX:
    IMPORTANT REMINDER:
 
    The filtered files are stored in the directory where the script is launched.
-   If different parameters are needed, you should update the script accordingly
-   1000G files directory should be set in the filter_id.sh as well as the bcftools path manually
+   If different parameters are needed, you should update the script accordingly.
+   1000G files directory should be set in the filter_id.sh as well as the bcftools path manually.
 
    • source: variable for the 1000G dataset location.
    • cmd: variable for the bcftools command.
