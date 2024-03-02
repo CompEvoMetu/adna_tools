@@ -195,7 +195,7 @@ INDEX:
    
    Example:
 
-   • Documentation:
+   • Documentation:                                                                                                                                                                    
      $ python3 $ADNA_PATH/vcf2maf.py --help
 
    • $ screen python3 $ADNA_PATH/vcf2maf.py --vcf_file TSI_bi_snps.vcf --maf_file TSI_maf.frq
@@ -211,7 +211,7 @@ INDEX:
 
    Example:
 
-   • Documentation:
+   • Documentation:                                                                                                                                                                    
      $ python3 $ADNA_PATH/extract_chr.py --help
 
    • $ screen python3 $ADNA_PATH/extract_chr.py --vcf_file TSI_bi_snps.vcf --prefix 'TSI_bi_snps' --chr_id 23 --pseudo-haploid True
@@ -244,13 +244,11 @@ INDEX:
 
    Examples (ADNA_PATH="/mnt/.../python/packages/adna_tools/"; export ADNA_PATH):
 
-    • Documentation:
-        $ python $ADNA_PATH/make.py --help
+    • Documentation:                                                                                                                                                                   
+      $ python $ADNA_PATH/make.py --help
 
-    • Initialize a script to create multiple instances (10) of a set of pedigrees (defined in the pedigrees.cfg):
-        $ python $ADNA_PATH/make.py --config ./def/pedigrees.cfg --n 10 --prefix founders --gmap inter_biSNPs_MAF_01_TSI.map
-                                    --maf ./MAF/TSI_maf_01.frq --m_founders 10 --f_founders 10
-                                    --working_folder ./def --export init_pop.sh
+    • Initialize a script to create multiple instances (10) of a set of pedigrees (defined in the pedigrees.cfg):                                                                      
+      $ python $ADNA_PATH/make.py --config ./def/pedigrees.cfg --n 10 --prefix founders --gmap inter_biSNPs_MAF_01_TSI.map --maf ./MAF/TSI_maf_01.frq --m_founders 10 --f_founders 10 --working_folder ./def --export init_pop.sh
 
    It needs a  configuration file  ('config')  and the number of samples  ('n') for each relationship specified in the
    configuration file.  Minor allele frequency ('maf') and genetic map ('gmap') files, as well as the desired number of
@@ -441,34 +439,27 @@ INDEX:
 
     Example:
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/dynamic_kinship.py --help
 
     • Compute dynamic ASC on all chromosomes (each chromosome has one figure and one logging file) with a non-overlapping 
-      window and no plots:
-      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples
-                                                     --win_length 500000 --win_shift 500000 --plots False
+      window and no plots:                                                                                                                                                             
+      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples --win_length 500000 --win_shift 500000 --plots False
 
-    • Compute dynamic ASC on only the X chromosome with a non-overlapping window:
-      $ screen python3 $ADNA_PATH/dynamic_kinshio.py --vcf_file samples.vcf --prefix asc_samples
-                                                     --win_length 500000 --win_shift 500000 --chromosomes X
+    • Compute dynamic ASC on only the X chromosome with a non-overlapping window:                                                                                                      
+      $ screen python3 $ADNA_PATH/dynamic_kinshio.py --vcf_file samples.vcf --prefix asc_samples --win_length 500000 --win_shift 500000 --chromosomes X
 
     • Compute dynamic ASC on a series of chromosomes (each chromosome has one figure and one logging file) with a non- 
-      overlapping window:
-      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples
-                                                     --win_length 500000 --win_shift 500000 --chromosomes [1,2,3,X]
+      overlapping window:                                                                                                                                                              
+      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples --win_length 500000 --win_shift 500000 --chromosomes [1,2,3,X]
 
     • Compute dynamic ASC on a series of chromosomes (each chromosome has one figure and one logging file) with 50% 
-      overlapping window:
-      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples
-                                                     --win_length 500000 --win_shift 250000 --chromosomes [1,2,3,X]
+      overlapping window:                                                                                                                                                              
+      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples --win_length 500000 --win_shift 250000 --chromosomes [1,2,3,X]
 
     • Compute dynamic ASC on a series of chromosomes (each chromosome has one figure and one logging file) with 50% 
-      overlapping window
-      with only selected relationships and associated labels:
-      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples
-                                                     --win_length 500000 --win_shift 250000 --chromosomes [1,2,3,X]
-                                                     --idx_rel [0,1,2] --labels ["Relation0","Relation1","Relation2"]
+      overlapping window with only selected relationships and associated labels:                                                                                                       
+      $ screen python3 $ADNA_PATH/dynamic_kinship.py --vcf_file samples.vcf --prefix asc_samples --win_length 500000 --win_shift 250000 --chromosomes [1,2,3,X] --idx_rel [0,1,2] --labels ["Relation0","Relation1","Relation2"]
 
 ============================================================
 
@@ -479,10 +470,10 @@ INDEX:
 
     Example:
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/split_vcf.py --help
 
-    • Split a VCF file:
+    • Split a VCF file:                                                                                                                                                                
       $ python3 $ADNA_PATH/split_vcf.py --source population.vcf
 
       Output files for the population.vcf with M samples:
@@ -491,7 +482,7 @@ INDEX:
       ...
       populationM.vcf
 
-    • Split a list of VCF files whose names are stored in a text file:
+    • Split a list of VCF files whose names are stored in a text file:                                                                                                                 
       $ python3 $ADNA_PATH/split_vcf.py --source list.txt
 
 ============================================================
@@ -507,16 +498,16 @@ INDEX:
 
     Example:
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/haploidize.py --help
 
-    • Single run of haploidization for a VCF file (the output VCF file will contain 0s and 1s):
+    • Single run of haploidization for a VCF file (the output VCF file will contain 0s and 1s):                                                                                        
       $ python3 $ADNA_PATH/haploidize.py --vcf_file sample.vcf
 
-    • Three runs of haploidization for a VCF file (the output VCF files will contain single 0 and 1 values):
+    • Three runs of haploidization for a VCF file (the output VCF files will contain single 0 and 1 values):                                                                           
       $ python3 $ADNA_PATH/haploidize.py --vcf_file sample.vcf --n 3
 
-    • Two runs of haploidization for a VCF file (the output VCF files will contain the two-element values 0|0 or 1|1):
+    • Two runs of haploidization for a VCF file (the output VCF files will contain the two-element values 0|0 or 1|1):                                                                 
       $ python3 $ADNA_PATH/haploidize.py --vcf_file sample.vcf --n 2 --sigle False
 
 ============================================================
@@ -531,13 +522,13 @@ INDEX:
     individuals. This can be simply done by executing the dynamic_asc function (with the same parameters used to compute the
     coefficients on the samples of interest). As an example, we can consider a VCF file containing a set of unrelated founders:
   
-    • Example:  
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/dynamic_asc.py --vcf_file founders_1.vcf --prefix unrelated --win_length 5000 --win_shift 5000
 
     The mismatch coefficient log file will then contain the estimates (computed among all unrelated samples) for each of the
     analyzed windows.
     
-    • See generated output:
+    • See generated output:                                                                                                                                                            
       $ less -S unrelated_1_MSM.log
 
     In this case, the index 1 indicates the output for chromosome 1.
@@ -545,10 +536,10 @@ INDEX:
     Upon these values, we are going to compute the baseline mismatch coefficient for each window by calling the function
     msm_baseline:
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/msm_baseline.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/msm_baseline.py --log_file unrelated_1_MSM.log --prefix msm_baseline_median --mode median
 
     The function considers a LOG file pertaining to the mismatch coefficient (see dynamic_asc documentation for more details)
@@ -562,7 +553,7 @@ INDEX:
     each mode, are exported.
     The output file will be a text file (CVS formatted) with the extension BSL:
 
-    • See generated output:
+    • See generated output:                                                                                                                                                            
       $ less -S msm_baseline_median.bsl
 
     Whereas the first and second columns will contain the window IDs and the sample size respectively, the third column will 
@@ -572,17 +563,16 @@ INDEX:
     Once the baseline file(s) is (are) computed, with it (them) you can normalize all the relevant mismatch coefficient LOG 
     files by calling the normalize_msm function:
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/normalize_msm.py --help
 
-    • Example:
-      $ python3 $ADNA_PATH/normalize_msm.py --log_file samples_1_MSM.log --bsl_file msm_baseline_median.bsl --prefix 
-      normalized_samples_1
+    • Example:                                                                                                                                                                         
+      $ python3 $ADNA_PATH/normalize_msm.py --log_file samples_1_MSM.log --bsl_file msm_baseline_median.bsl --prefix normalized_samples_1
 
     The function will normalize the values stored in the LOG file and will create a new file with the given prefix and an 
     automatic suffix identifying the applied normalization:
 
-    • See generated output:  
+    • See generated output:                                                                                                                                                            
       $ less -S normalized_samples_1_BSL_median.log
 
 ============================================================
@@ -604,10 +594,10 @@ INDEX:
     Basically, you create a text file where each line contains a VCF filename (ex.: list.txt) then you pass that file, 
     together with a prefix (ex.: merged_ancient) for the output VCF file that will be generated, to the function.
     
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/append_vcf.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/append_vcf.py --txt_file filenames_list.txt --prefix merged_filename
 
 ============================================================
@@ -619,10 +609,10 @@ INDEX:
     other information). The assumption is that the first line contains the frequency value for the
     first SNP in the VCF file (and so on).
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/add_AF_tag.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/add_AF_tag.py --vcf_file ancient.vcf --af_file ancient_frequency.frq
 
 ============================================================
@@ -636,10 +626,10 @@ INDEX:
     individual 0 and 1), ancient_0_2.vcf (shared SNPs between individual 0 and 2),
     ancient_0_3.vcf, ancient_1_2.vcf, ancient_1_3.vcf, ancient_2_3.vcf.
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/ancient_vcf.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/ancient_vcf.py --vcf_file ancient.vcf
 
 ============================================================
@@ -654,14 +644,14 @@ INDEX:
     it generates new VCF files (with the additional given prefix) where all misplaced entries are rearranged
     and duplicate entries as well as unsupported SNP lines are discarded.
     
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/fix_vcf.py --help
 
-    • Check multiple VCF files passed as a text list while also retaining SNPs with at most 2 missing values per sample:
+    • Check multiple VCF files passed as a text list while also retaining SNPs with at most 2 missing values per sample:                                                               
       $ python3 $ADNA_PATH/fix_vcf.py --filename list.txt --missing_values 2 --prefix fixed_ --feedback False
 
     • Check a single VCF file while also filtering all SNPs with at least one missing value (i.e. retain SNPs with 0 missing 
-      values):
+      values):                                                                                                                                                                         
       $ python3 $ADNA_PATH/fix_vcf.py --filename tuscany.vcf --missing_values 0 --prefix fixed_ --feedback False
 
 ============================================================
@@ -673,10 +663,10 @@ INDEX:
     are marked with missing values. Common SNPs with conflicting reference and/or alternate values are automatically
     discarded (if necessary a log file provides all the details).
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/merge_vcf.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/merge_vcf.py --txt_file "list.txt" --prefix "merged_data"
 
 ============================================================
@@ -699,10 +689,10 @@ INDEX:
     list of observed SNPs and their occurrences in discarded samples).
     When a SNP is discarded the REF, ALT, N_REF, N_ALT columns are filled with '-'.
 
-    • Documentation:
+    • Documentation:                                                                                                                                                                   
       $ python3 $ADNA_PATH/vcf2freq.py --help
 
-    • Example:
+    • Example:                                                                                                                                                                         
       $ python3 $ADNA_PATH/vcf2freq.py --txt_file "list.txt" --prefix "neo_data"
 
 ============================================================
