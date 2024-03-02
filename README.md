@@ -78,7 +78,8 @@ INDEX:
    • Filter VCF and genetic map with both autosomes and X chromosome:                                                                                                                  
      $ python $ADNA_PATH/filter_vcf.py --vcf tuscany.vcf --prefix interpolated_tuscanians --f_maps ./genetic_map/female_chr{}.txt --m_maps ./genetic_map/male_chr{}.txt --x_chr 23
 
-   • Filter VCF and genetic map with only autosomes:                                                                                                                                         $ python $ADNA_PATH/filter_vcf.py --vcf tuscany_autosomes.vcf --prefix interpolated_tuscanians --f_maps ./genetic_map/female_chr{}.txt --m_maps ./genetic_map/male_chr{}.txt
+   • Filter VCF and genetic map with only autosomes:                                                                                                                                   
+     $ python $ADNA_PATH/filter_vcf.py --vcf tuscany_autosomes.vcf --prefix interpolated_tuscanians --f_maps ./genetic_map/female_chr{}.txt --m_maps ./genetic_map/male_chr{}.txt
 
    • Filter VCF and genetic map with only X chromosome:                                                                                                                                      $ python $ADNA_PATH/filter_vcf.py --vcf tuscany_x.vcf --prefix interpolated_tuscanians --f_maps ./genetic_map/female_chr{}.txt --m_maps ./genetic_map/male_chr{}.txt --chrs [] --x_chr 23
 
