@@ -35,18 +35,20 @@ INDEX:
    $ PEDSIM_PATH="/path/to/PedSim"; export PEDSIM_PATH
 
    These lines can be added to the .profile (or .bashrc) file so that at every log-in the variables are automatically created (e.g., cd ~; nano .profile).
-   Note that you will have to install your own version of PedSim and specify its path to the PEDSIM_PATH variable (see last paragraph in 2).
+   Note that you have to install your own version of PedSim and specify its path to the PEDSIM_PATH variable (see last paragraph in 2). Also, you have to create the    
+   /python/packages/ directory in your specific path.
 
 ============================================================
 
 2) HOW TO INSTALL THE ADNA TOOLS PYTHON WHEEL PACKAGE AND PEDSIM:
 
    ADNA TOOLS
-   
-   Location of aDNA Tools package: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
-   You can copy the package to the IN_HOUSE_PYTHON_PATH folder you defined earlier and run the pip command from there.
 
-   $ pip3 install --target=$IN_HOUSE_PYTHON_PATH adnaTools-2021.3.22-py3-none-any.whl --upgrade
+   $ git clone https://github.com/CompEvoMetu/adna_tools.git
+   
+   After cloning the repository location of aDNA Tools package should be: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
+   
+   $ pip3 install --target=$IN_HOUSE_PYTHON_PATH adnaTools-2022.5.14-py3-none-any.whl --upgrade
 
    The main available functions are:
    • Filter/Interpolate VCF files given genetic maps [3]
@@ -57,11 +59,11 @@ INDEX:
    • Create a script to simulate multiple instances of pedigrees [9]
    • Create plots on how the allele-sharing coefficient varies among samples in a VCF file
 
-   PED-SIM
+   PEDSIM
    Note: Be sure you are on a mounted disk which allows you to execute "executable" files.
 
-   $ git clone https://github.com/williamslab/ped-sim.git
-   $ cd ped-sim
+   $ git clone https://github.com/williamslab/ped-sim.git                                                                                                                              
+   $ cd ped-sim                                                                                                                                                                        
    $ make
 
 ============================================================
