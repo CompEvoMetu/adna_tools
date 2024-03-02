@@ -108,43 +108,39 @@ INDEX:
 
    Examples:
 
-   • Documentation:
-     $ python $ADNA_PATH/rnd_pop.py --help
+   • Documentation:                                                                                                                                                                          $ python $ADNA_PATH/rnd_pop.py --help
 
-   • Generate random individuals with both autosomes and X chromosome and sexes given a MAF file:
+   • Generate random individuals with both autosomes and X chromosome and sexes given a MAF file:                                                                                      
      $ python $ADNA_PATH/rnd_pop.py --ref maf_template.frq --prefix random_template --n_male 3 --n_female 2 --x_chr X
 
      Note: The parameter x_chr could be omitted as the default value identifying X chromosome SNPs is 'X'.
 
    • Generate random individuals with autosomes (ignoring X chromosome as no sex specifications are given) with an MAF file as 
-     input:
-     $ python $ADNA_PATH/rnd_pop.py --ref maf_template.frq --prefix random_template --n 10
+     input:                                                                                                                                                                                  $ python $ADNA_PATH/rnd_pop.py --ref maf_template.frq --prefix random_template --n 10
 
    • Generate random individuals with both autosomes and X chromosome and sexes given a VCF file with MAF specified with a tag 
-     (within the VCF file):
+     (within the VCF file):                                                                                                                                                            
      $ python $ADNA_PATH/rnd_pop.py --ref tuscany.vcf --maf_ref tag --prefix random_template --n_male 3 --n_female 2 --x_chr 23
 
    • Generate random individuals with autosomes (ignoring X chromosome as no sex specifications are given) with a VCF file and 
-     MAF defined via tag (within the VCF file):
+     MAF defined via tag (within the VCF file):                                                                                                                                        
      $ python $ADNA_PATH/rnd_pop.py --ref tuscany.vcf --maf_ref tag --prefix random_template --n 10 --x_chr 23
 
      Note: The parameter x_chr is specified as the VCF file contains also X chromosome data when found since the sexes are 
            not required, it will be ignored.
            If the VCF file does not contain X chromosome data then there is no need to specify this parameter.
 
-   • Generate random individuals with autosomes and sexes with a VCF file and MAF defined via tag (within the VCF file):
-     $ python $ADNA_PATH/rnd_pop.py --ref tuscany_autosomes.vcf --maf_ref tag --prefix random_template --n_female 5 --n_male 9
+   • Generate random individuals with autosomes and sexes with a VCF file and MAF defined via tag (within the VCF file):                                                                     $ python $ADNA_PATH/rnd_pop.py --ref tuscany_autosomes.vcf --maf_ref tag --prefix random_template --n_female 5 --n_male 9
 
    • Generate random individuals with autosomes, with no sex specified, given a VCF file and MAF defined via tag (within the 
-     VCF file):
+     VCF file):                                                                                                                                                                        
      $ python $ADNA_PATH/rnd_pop.py --ref tuscany_autosomes.vcf --maf_ref tag --prefix random_template --n 10
 
-   • Generate random individuals with X chromosome and sexes given a VCF file and MAF defined via tag (within the VCF file):
+   • Generate random individuals with X chromosome and sexes given a VCF file and MAF defined via tag (within the VCF file):                                                           
      $ python $ADNA_PATH/rnd_pop.py --ref tuscany_x.vcf --maf_ref tag --prefix random_template --n_female 5 --n_male 9 --x_chr 23
 
-   • Generate random individuals with both autosomes and X chromosome and sexes given MAF file and specifying column indices:
-     $ screen python $ADNA_PATH/rnd_pop.py --ref TSI_maf_01.frq --prefix random_TSI --n_male 1 --n_female 1
-                                           --x_chr X --chr_idx 0 --pos_idx 1 --id_idx 2 --ref_idx 3 --alt_idx 4 --maf_idx 5
+   • Generate random individuals with both autosomes and X chromosome and sexes given MAF file and specifying column indices:                                                          
+     $ screen python $ADNA_PATH/rnd_pop.py --ref TSI_maf_01.frq --prefix random_TSI --n_male 1 --n_female 1 --x_chr X --chr_idx 0 --pos_idx 1 --id_idx 2 --ref_idx 3 --alt_idx 4 --maf_idx 5
 
 ============================================================
 
