@@ -46,7 +46,7 @@ INDEX:
 
    $ git clone https://github.com/CompEvoMetu/adna_tools.git
    
-   After cloning the repository, location of aDNA Tools package should be: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
+   After cloning the repository, the location of the aDNA Tools package should be: /path/to/python/packages/adnaTools-2021.3.22-py3-none-any.whl
    
    $ pip3 install --target=$IN_HOUSE_PYTHON_PATH adnaTools-2022.5.14-py3-none-any.whl --upgrade
 
