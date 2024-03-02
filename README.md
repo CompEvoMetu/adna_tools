@@ -234,15 +234,14 @@ INDEX:
 
     Examples (ADNA_PATH="/mnt/.../python/packages/adna_tools/"; export ADNA_PATH):
 
-    • Documentation:
-        $ python $ADNA_PATH/maf_filter.py --help
+    • Documentation:                                                                                                                                                                   
+      $ python $ADNA_PATH/maf_filter.py --help
 
-    • Filter VCF file given threshold:
-        $ python $ADNA_PATH/maf_filter.py --maf_file pops.vcf --prefix filter_pops
-                                          --maf_threshold 0.05
-    • Filter FRQ file given threshold:
-        $ screen python3 $ADNA_PATH/maf_filter.py --maf_file pops_maf.frq --prefix filter_pops
-                                                  --maf_threshold 0.1
+    • Filter VCF file given threshold:                                                                                                                                                 
+      $ python $ADNA_PATH/maf_filter.py --maf_file pops.vcf --prefix filter_pops --maf_threshold 0.05
+   
+    • Filter FRQ file given threshold:                                                                                                                                                 
+      $ screen python3 $ADNA_PATH/maf_filter.py --maf_file pops_maf.frq --prefix filter_pops --maf_threshold 0.1
 
 ============================================================
 
